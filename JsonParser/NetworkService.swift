@@ -22,7 +22,7 @@ class NetworkService {
     
     func downloadImage(_ completion: @escaping ImageDataHandler) {
         let request = URLRequest(url: self.url)
-        let dataTask = session.dataTask(with: request, completionHadler: {
+        let dataTask = session.dataTask(with: request, completionHandler: {
             (data, response, error) in
             if error == nil {
                 if let httpResponse = response as? HTTPURLResponse {
@@ -44,7 +44,7 @@ class NetworkService {
 }
 
 extension NetworkService {
-    static func parseJSONFromData(_ jsonData: Data?) -> [String : AnyOBject]? {
+    static func parseJSONFromData(_ jsonData: Data?) -> [String : AnyObject]? {
         if let data = jsonData {
             do {
                 let jsonDictionary = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as? [String : AnyObject]

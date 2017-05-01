@@ -13,10 +13,10 @@ class EpisodeTableViewCell: UITableViewCell {
     func updateUI() {
         
     }
-    
-    @IBOutlet weak var thumbnailImageView: UIImageView!
-    @IBOutlet weak var descriptionLabel: UILabel!
+
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var createdAtLabel: UILabel!
+    @IBOutlet weak var thumbnailImageView: UIImageView!
     @IBOutlet weak var authorImageView: UIImageView!
 }

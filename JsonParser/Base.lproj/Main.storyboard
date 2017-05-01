@@ -17,13 +17,13 @@
         <!--CyberKuma.io-->
         <scene sceneID="tuS-PM-kvf">
             <objects>
-                <tableViewController id="Wrb-jW-5Ii" sceneMemberID="viewController">
+                <tableViewController id="Wrb-jW-5Ii" customClass="EpisodesTableViewController" customModule="JsonParser" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="uJr-rH-m7e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="111" id="9BT-NG-KIA">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="111" id="9BT-NG-KIA" customClass="EpisodeTableViewCell" customModule="JsonParser" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="111"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9BT-NG-KIA" id="r4V-ay-JTt">
@@ -68,6 +68,13 @@
                                         <constraint firstItem="v8c-PS-Gmh" firstAttribute="top" secondItem="r4V-ay-JTt" secondAttribute="top" constant="12" id="qkD-sF-87p"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="authorImageView" destination="ex0-Fb-1yW" id="c15-88-V1a"/>
+                                    <outlet property="createdAtLabel" destination="zgT-uM-5aC" id="mL0-mY-ZOZ"/>
+                                    <outlet property="descriptionLabel" destination="v8c-PS-Gmh" id="SKU-30-is7"/>
+                                    <outlet property="thumbnailImageView" destination="ex0-Fb-1yW" id="FSa-4Z-LWn"/>
+                                    <outlet property="titleLabel" destination="Vbg-ml-iSh" id="lz3-9H-sLN"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -78,6 +85,9 @@
                     <navigationItem key="navigationItem" title="CyberKuma.io" id="GZE-rv-OAD">
                         <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="LJ9-76-Svk">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="fullBlogDidTap:" destination="Wrb-jW-5Ii" id="Mgd-B2-pM8"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
