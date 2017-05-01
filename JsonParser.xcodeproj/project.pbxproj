@@ -14,6 +14,7 @@
 		2723A6D71EB77B4A00C8B09C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2723A6D51EB77B4A00C8B09C /* LaunchScreen.storyboard */; };
 		2723A6E21EB77B4A00C8B09C /* JsonParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2723A6E11EB77B4A00C8B09C /* JsonParserTests.swift */; };
 		2723A6ED1EB77B4A00C8B09C /* JsonParserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2723A6EC1EB77B4A00C8B09C /* JsonParserUITests.swift */; };
+		2723A6FB1EB77B9A00C8B09C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2723A6FA1EB77B9A00C8B09C /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2723A6E81EB77B4A00C8B09C /* JsonParserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsonParserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2723A6EC1EB77B4A00C8B09C /* JsonParserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParserUITests.swift; sourceTree = "<group>"; };
 		2723A6EE1EB77B4A00C8B09C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2723A6FA1EB77B9A00C8B09C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		2723A6C01EB77B4A00C8B09C = {
 			isa = PBXGroup;
 			children = (
+				2723A6FA1EB77B9A00C8B09C /* .gitignore */,
 				2723A6CB1EB77B4A00C8B09C /* JsonParser */,
 				2723A6E01EB77B4A00C8B09C /* JsonParserTests */,
 				2723A6EB1EB77B4A00C8B09C /* JsonParserUITests */,
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2723A6FB1EB77B9A00C8B09C /* .gitignore in Resources */,
 				2723A6D71EB77B4A00C8B09C /* LaunchScreen.storyboard in Resources */,
 				2723A6D41EB77B4A00C8B09C /* Assets.xcassets in Resources */,
 				2723A6D21EB77B4A00C8B09C /* Main.storyboard in Resources */,
