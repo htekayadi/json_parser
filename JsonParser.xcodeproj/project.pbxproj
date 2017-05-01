@@ -15,6 +15,7 @@
 		2723A6E21EB77B4A00C8B09C /* JsonParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2723A6E11EB77B4A00C8B09C /* JsonParserTests.swift */; };
 		2723A6ED1EB77B4A00C8B09C /* JsonParserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2723A6EC1EB77B4A00C8B09C /* JsonParserUITests.swift */; };
 		2723A6FB1EB77B9A00C8B09C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2723A6FA1EB77B9A00C8B09C /* .gitignore */; };
+		2723A6FD1EB7861F00C8B09C /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2723A6FC1EB7861F00C8B09C /* EpisodeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2723A6EC1EB77B4A00C8B09C /* JsonParserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParserUITests.swift; sourceTree = "<group>"; };
 		2723A6EE1EB77B4A00C8B09C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2723A6FA1EB77B9A00C8B09C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		2723A6FC1EB7861F00C8B09C /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				2723A6D31EB77B4A00C8B09C /* Assets.xcassets */,
 				2723A6D51EB77B4A00C8B09C /* LaunchScreen.storyboard */,
 				2723A6D81EB77B4A00C8B09C /* Info.plist */,
+				2723A6FE1EB7862900C8B09C /* View */,
 			);
 			path = JsonParser;
 			sourceTree = "<group>";
@@ -126,6 +129,14 @@
 				2723A6EE1EB77B4A00C8B09C /* Info.plist */,
 			);
 			path = JsonParserUITests;
+			sourceTree = "<group>";
+		};
+		2723A6FE1EB7862900C8B09C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2723A6FC1EB7861F00C8B09C /* EpisodeTableViewCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2723A6FD1EB7861F00C8B09C /* EpisodeTableViewCell.swift in Sources */,
 				2723A6CF1EB77B4A00C8B09C /* ViewController.swift in Sources */,
 				2723A6CD1EB77B4A00C8B09C /* AppDelegate.swift in Sources */,
 			);
@@ -509,6 +521,7 @@
 				2723A6F31EB77B4A00C8B09C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2723A6F41EB77B4A00C8B09C /* Build configuration list for PBXNativeTarget "JsonParserTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +530,7 @@
 				2723A6F61EB77B4A00C8B09C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2723A6F71EB77B4A00C8B09C /* Build configuration list for PBXNativeTarget "JsonParserUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +539,7 @@
 				2723A6F91EB77B4A00C8B09C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
